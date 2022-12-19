@@ -24,7 +24,7 @@ Rest API Libraries: Axios
 
 ## Installation and Setup Instructions
 
-Source code URL: https://github.com/LickyHoney/CatsAPIBackend.git
+Source code URL: https://github.com/LickyHoney/CatAPIV1.git
 
 ###Steps to run it locally:
 
