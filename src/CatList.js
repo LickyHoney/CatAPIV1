@@ -1,3 +1,4 @@
+/* eslint-disable react/style-prop-object */
 import React, { useState, useEffect } from "react";
 
 import Search from "./Search";
@@ -96,8 +97,12 @@ const CatList = (props) => {
         cats.filter((cat) => {
           return cat.id !== id;
         })
+       
       );
-      if (res.data.status === 200) alert("Success!");
+     
+      if (res.data.status === 200) 
+debugger;
+      alert("Success!");
     });
   };
 
@@ -160,6 +165,16 @@ const CatList = (props) => {
       debugger;
     });
   };
+
+//   var tables = document.getElementsByClassName(".list_col");
+//   console.log(tables)
+// var cols = tables[0].querySelectorAll('colgroup col');
+
+// console.log(window.innerWidth);
+
+//  for(let index = 0; index < cols.length; index++){
+//    cols[index].style.width = window.innerWidth/3 + "px";
+//  }
 
   //Rendering the UI
   return (
@@ -249,25 +264,26 @@ const CatList = (props) => {
         <>
           <div className="list">
             <table>
+         
               <thead>
                 <tr
                   className="colhead"
                   style={{ color: "crimpson", backgroundColor: "burlywood" }}
                 >
-                  <th scope="col">Name</th>
-                  <th scope="col">Breed Group</th>
-                  <th scope="col">Weight</th>
-                  <th scope="col">View</th>
-                  <th scope="col">Delete a Cat</th>
+                  <th>Name</th>
+                  <th>Breed Group</th>
+                  <th>Weight</th>
+                  <th>View</th>
+                  <th>Delete a Cat</th>
                 </tr>
               </thead>
               {cats.map((cat, i) => (
                 <tbody>
                   <tr key={cat.id}>
-                    <td data-label="Name">{cat.name}</td>
-                    <td data-label="Breed Group">{cat.breed_group}</td>
-                    <td data-label="Weight">{cat.weight}</td>
-                    <td data-label="View">
+                    <td>{cat.name}</td>
+                    <td>{cat.breed_group}</td>
+                    <td>{cat.weight}</td>
+                    <td>
                       <button
                         variant="primary"
                         onClick={() => {

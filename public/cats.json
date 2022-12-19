@@ -361,12 +361,6 @@
       "weight": ""
     },
     {
-      "id": "3",
-      "name": "newcat",
-      "weight": "34",
-      "breed_group": "sdf"
-    },
-    {
       "id": "5",
       "name": "newcat",
       "weight": "54",
@@ -389,6 +383,18 @@
       "breed_group": "Active, Friendly, Independent, Intelligent, Gentle",
       "weight": "36",
       "id": "elpOIXQ"
+    },
+    {
+      "name": "test_cat",
+      "weight": "10-12",
+      "breed_group": "Affectionate,lively",
+      "id": "pKMF22V"
+    },
+    {
+      "name": "new_cat",
+      "weight": "5-6",
+      "breed_group": "Agile, Energetic",
+      "id": "gg86wWs"
     }
   ]
 }
